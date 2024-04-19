@@ -207,5 +207,13 @@ internal class Program
         {
             Console.WriteLine(name);
         }
+
+
+        // array of strings : sorting and searching
+        names.Sort();
+        foreach (var name in names)
+        {
+            Console.WriteLine(name);
+        }
     }
 }
