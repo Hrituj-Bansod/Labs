@@ -97,5 +97,38 @@ internal class Program
                 Console.WriteLine($"  {pet}");
             }
         }
+
+
+        // Oops Pillars  - 1. Encapsulation 
+        Player player = new Player();
+        player.SetName("Proire");
+        Console.WriteLine(player.GetName());
+
+        BankAccount account = new BankAccount();
+        account.BankAmount = 100000;
+        Console.WriteLine(account.BankAmount);
+
+        // 2.Inheritance
+        Gamer gamer = new Gamer("Proire");
+        gamer.Sleeps();
+        gamer.Plays();
+
+        // 3. polymorphism 
+        SportPerson sportPerson1 = new Cricketer("Proire");
+        SportPerson sportPerson2 = new BrainAthlete("Sadah");
+        sportPerson1.plays();
+        sportPerson2.plays();
+
+        // 4. Abstraction 
+        IFourWheeler fourwheeler1 = new Car();
+        IFourWheeler fourwheeler2 = new Bus();
+        fourwheeler1.Run();
+        fourwheeler2.Run();
+
+
+        FourWheeler fourWheelerone = new Car1();
+        FourWheeler fourWheelertwo = new Bus1();
+        fourWheelerone.Run();
+        fourWheelertwo.Run();   
     }
 }
