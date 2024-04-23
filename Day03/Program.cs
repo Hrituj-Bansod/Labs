@@ -129,6 +129,6 @@ internal class Program
         FourWheeler fourWheelerone = new Car1();
         FourWheeler fourWheelertwo = new Bus1();
         fourWheelerone.Run();
-        fourWheelertwo.Run();   
+        fourWheelertwo.Run();
     }
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sachintendulkar",
+    "name": "Sachin Tendulkar",
+    "img": "https://example.com/sachintendulkar.jpg",
+    "country": "India",
+    "role": "Batsman",
+    "url": "https://en.wikipedia.org/wiki/Sachin_Tendulkar",
+    "description": "Regarded as one of the greatest batsmen in the history of cricket. He is the highest run scorer of all time in International cricket."
+  },
+  {
+    "id": "rickyponting",
+    "name": "Ricky Ponting",
+    "img": "https://example.com/rickyponting.jpg",
+    "country": "Australia",
+    "role": "Batsman",
+    "url": "https://en.wikipedia.org/wiki/Ricky_Ponting",
+    "description": "One of the most successful captains in international cricket history, under his captaincy Australia reached the top of ICC rankings."
+  },
+  {
+    "id": "wasimakram",
+    "name": "Wasim Akram",
+    "img": "https://example.com/wasimakram.jpg",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "url": "https://en.wikipedia.org/wiki/Wasim_Akram",
+    "description": "Widely acknowledged as one of the greatest bowlers of all time. Known for his incredible swing bowling."
+  },
+  {
+    "id": "brianlara",
+    "name": "Brian Lara",
+    "img": "https://example.com/brianlara.jpg",
+    "country": "West Indies",
+    "role": "Batsman",
+    "url": "https://en.wikipedia.org/wiki/Brian_Lara",
+    "description": "Holds the record for the highest individual score in first-class cricket, with 501 not out for Warwickshire against Durham."
+  }
+]
