@@ -26,6 +26,39 @@
             Console.WriteLine($"{player1}");
             Console.WriteLine($"{player2}");
 
+            // Usage of Delegate in code: - 
+            // Instantiate the delegate.
+            Callback handler = DelegateMethod;
+
+            // Call the delegate by passing delegate to method as parameter 
+            MethodWithCallback(1, 2, handler);
+
+            // Multicast delegates
+            var obj = new MethodClass();
+            Callback d1 = obj.Method1;
+            Callback d2 = obj.Method2;
+            Callback d3 = DelegateMethod;
+
+            //Both types of assignment are valid.
+            Callback allMethodsDelegate = d1 + d2;
+            allMethodsDelegate += d3;
+            MethodWithCallback(1, 2, allMethodsDelegate);
+        }
+        
+        // Delegates - A delegate is a type that represents references to methods with a particular parameter list and return type. Delegates are used to pass methods as arguments to other methods
+        //declares a delegate named Callback that can encapsulate a method that takes a string as an argument and returns void:
+        public delegate void Callback(string message);
+
+        // Create a method for a delegate.
+        public static void DelegateMethod(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        // Method with call back
+        public static void MethodWithCallback(int param1, int param2, Callback callback)
+        {
+            callback("The number is: " + (param1 + param2).ToString());
         }
     }
 }
