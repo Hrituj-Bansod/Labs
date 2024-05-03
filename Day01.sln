@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03", "Day03\Day03.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWebApplication", "FirstWebApplication\FirstWebApplication.csproj", "{8579D630-4706-49F5-B093-21B78E450E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day12", "Day12\Day12.csproj", "{4B4D6C9F-9570-4CF1-9A70-6B876F9D6AAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day12", "Day12\Day12.csproj", "{4B4D6C9F-9570-4CF1-9A70-6B876F9D6AAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowException", "StackOverflowException\StackOverflowException.csproj", "{39AF34EE-D014-4285-A54F-0F96264F5975}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflowException", "StackOverflowException\StackOverflowException.csproj", "{39AF34EE-D014-4285-A54F-0F96264F5975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day13", "Day13\Day13.csproj", "{4FA8F751-B5EA-4A79-A988-91F0EEB7FBFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{39AF34EE-D014-4285-A54F-0F96264F5975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39AF34EE-D014-4285-A54F-0F96264F5975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39AF34EE-D014-4285-A54F-0F96264F5975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA8F751-B5EA-4A79-A988-91F0EEB7FBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA8F751-B5EA-4A79-A988-91F0EEB7FBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA8F751-B5EA-4A79-A988-91F0EEB7FBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA8F751-B5EA-4A79-A988-91F0EEB7FBFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
