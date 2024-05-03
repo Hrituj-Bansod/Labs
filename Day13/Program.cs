@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Runtime.ExceptionServices;
 
 namespace Day13
 {
@@ -8,7 +9,7 @@ namespace Day13
         {
             Console.WriteLine("Memory Management!");
 
-            Hondacity hondacity = new Hondacity();
+            Hondacity? hondacity = new Hondacity();
             hondacity = null;
 
             // Reflection 
@@ -106,7 +107,7 @@ namespace Day13
 
             // Specifies the class.
             Type t2 = typeof(System.IO.BufferedStream);
-            Console.WriteLine("Listing all the members (public and non public) of the {0} type", t);
+            Console.WriteLine("Listing all the members (public and non public) of the {0} type", t2);
 
             // Lists static fields first.
             FieldInfo[] fi = t2.GetFields(BindingFlags.Static |
@@ -164,6 +165,18 @@ namespace Day13
 
             Console.WriteLine("\r\nPress ENTER to exit.");
             Console.Read();
+
+
+
+            // closure Usage Code 
+            ClosureExample example = new ClosureExample();
+            Func<int, int> closure = example.CreateClosure();
+
+            int result = closure(5);
+            int anotherresult = closure(10);
+
+            Console.WriteLine($"First Result : {result} Second Result : {anotherresult}");
+
         }
 
         public static void PrintMembers(MemberInfo[] ms)
