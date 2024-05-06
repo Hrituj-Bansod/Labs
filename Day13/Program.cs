@@ -9,7 +9,7 @@ namespace Day13
         {
             Console.WriteLine("Memory Management!");
 
-            Hondacity? hondacity = new Hondacity();
+            Hondacity? hondacity = new();
             hondacity = null;
 
             // Reflection 
