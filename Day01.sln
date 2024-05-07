@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day14", "Day14\Day14.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHandling", "FileHandling\FileHandling.csproj", "{5320020A-A147-4FFF-A217-0E3DE24936EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareDesignPrinciples(DRY,KISS,YAGNI)", "SoftwareDesignPrinciples(DRY,KISS,YAGNI)\SoftwareDesignPrinciples(DRY,KISS,YAGNI).csproj", "{F228F05A-4DEA-4E05-A805-EA203914713B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F228F05A-4DEA-4E05-A805-EA203914713B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F228F05A-4DEA-4E05-A805-EA203914713B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F228F05A-4DEA-4E05-A805-EA203914713B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F228F05A-4DEA-4E05-A805-EA203914713B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
