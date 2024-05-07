@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day13", "Day13\Day13.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day14", "Day14\Day14.csproj", "{49B581EC-E59F-4C9C-B319-A3E4CD80FB2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling", "FileHandling\FileHandling.csproj", "{5320020A-A147-4FFF-A217-0E3DE24936EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHandling", "FileHandling\FileHandling.csproj", "{5320020A-A147-4FFF-A217-0E3DE24936EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5320020A-A147-4FFF-A217-0E3DE24936EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5320020A-A147-4FFF-A217-0E3DE24936EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5320020A-A147-4FFF-A217-0E3DE24936EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
