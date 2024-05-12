@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("---------------------------------------Design Patterns---------------------------------------\n\n");
-            Console.WriteLine("**********************Singleton Pattern*********************\n\n");
+            Console.WriteLine("********************** Singleton Pattern*********************\n\n");
 
             // Get the singleton instance
             Singleton instance1 = Singleton.GetSingleton();
@@ -23,7 +23,7 @@
 
             Console.WriteLine("\n\nEnter the key for Factory Pattern\n\n");
             Console.ReadKey(false);
-            Console.WriteLine("**********************Factory Pattern*********************\n\n");
+            Console.WriteLine("********************** Factory Pattern*********************\n\n");
 
             // Example of program to implementation
             WindowsUIComponentCreator windowsUIComponentCreator = new WindowsUIComponentCreator();
@@ -49,19 +49,23 @@
 
             Console.WriteLine("\n\nEnter the key for Adapter Pattern\n\n");
             Console.ReadKey(false);
-            Console.WriteLine("**********************Adapter pattern*********************\n\n");
+            Console.WriteLine("********************** Adapter pattern*********************\n\n");
 
             RectangularPlug plug = new RectangularPlug();
             plug.GetPower();
 
             Console.WriteLine("\n\nEnter the key for Fascade Pattern\n\n");
             Console.ReadKey(false);
-            Console.WriteLine("**********************Fascade pattern*********************\n\n");
+            Console.WriteLine("********************** Fascade pattern*********************\n\n");
 
             TravelFacade facade = new TravelFacade();
             DateTime from = DateTime.Today;
             DateTime to = DateTime.Today.AddDays(7);
             facade.GetFlightsAndHotels(from, to);
+
+            Console.WriteLine("\n\nEnter the key for Observer Pattern\n\n");
+            Console.ReadKey(false);
+            Console.WriteLine("********************** Observer pattern*********************\n\n");
 
         }
     }
