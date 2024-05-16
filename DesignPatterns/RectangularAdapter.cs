@@ -16,11 +16,12 @@ namespace DesignPatterns
 
     public class RectangularAdapter : CylindricalSocket
     {
-        public string Adapt(string rectaStem1, string rectaStem2)
+        public string Adapt(string rectaStem1, string rectaStem2, string rectStem3)
         {
 
             string cylinStem1 = rectaStem1;
             string cylinStem2 = rectaStem2;
+            string Extrastrem3 = rectStem3;
             return Supply(cylinStem1, cylinStem2);
         }
     }
@@ -29,11 +30,12 @@ namespace DesignPatterns
     {
         private string rectaStem1;
         private string rectaStem2;
+        private string rectaStem3;
 
         public void GetPower()
         {
             RectangularAdapter adapter = new RectangularAdapter();
-            string power = adapter.Adapt(rectaStem1, rectaStem2);
+            string power = adapter.Adapt(rectaStem1, rectaStem2, rectaStem3);
             Console.WriteLine(power);
         }
     }
