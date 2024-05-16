@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHandling", "FileHandlin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{9AFA9326-E9EB-4FFC-8B3E-9BCE16821FF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareDesignPrinciples(DRY,KISS,YAGNI)", "SoftwareDesignPrinciples(DRY,KISS,YAGNI)\SoftwareDesignPrinciples(DRY,KISS,YAGNI).csproj", "{F228F05A-4DEA-4E05-A805-EA203914713B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftwareDesignPrinciples(DRY,KISS,YAGNI)", "SoftwareDesignPrinciples(DRY,KISS,YAGNI)\SoftwareDesignPrinciples(DRY,KISS,YAGNI).csproj", "{F228F05A-4DEA-4E05-A805-EA203914713B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{3D647384-DD64-4465-BCB1-230BA03A3B3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{3D647384-DD64-4465-BCB1-230BA03A3B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThreading\MultiThreading.csproj", "{90416471-D8D1-47AC-BE60-42FE6BB97BC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{3D647384-DD64-4465-BCB1-230BA03A3B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D647384-DD64-4465-BCB1-230BA03A3B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D647384-DD64-4465-BCB1-230BA03A3B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90416471-D8D1-47AC-BE60-42FE6BB97BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90416471-D8D1-47AC-BE60-42FE6BB97BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90416471-D8D1-47AC-BE60-42FE6BB97BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90416471-D8D1-47AC-BE60-42FE6BB97BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
