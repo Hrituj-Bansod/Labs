@@ -25,11 +25,12 @@ internal class Program
         primaryThread.Priority = ThreadPriority.Highest;
         Console.WriteLine("Priority Level: {0}", primaryThread.Priority);//
         Console.WriteLine("Thread State: {0}", primaryThread.ThreadState);// Running
+
+
         Console.WriteLine("\nClick to Start Multithreading Execution Loop");
         Console.ReadLine();
 
         Console.WriteLine("Main Thread Started");
-
         //Creating Threads
         Thread t1 = new Thread(Mutliprogramming.Method1)
         {
@@ -50,7 +51,7 @@ internal class Program
         t3.Start();
         Console.WriteLine("Main Thread Ended");
         Console.WriteLine("\nClick to See Program for passing input or assign method to start which accepts input");
-        Console.Read();
+        Console.ReadLine();
 
         int Max = 10;
         MultiThreading.NumberHelper obj = new MultiThreading.NumberHelper(Max);
@@ -60,7 +61,7 @@ internal class Program
         T1.Start();
 
         Console.WriteLine("\nClick to See Program Retriveing data from method which is executed by thread");
-        Console.Read();
+        Console.ReadLine();
 
         //Create the ResultCallbackDelegate instance and to its constructor 
         //pass the callback method name
@@ -75,7 +76,7 @@ internal class Program
         T2.Start();
 
         Console.WriteLine("\nClick to See Program use of Join Method");
-        Console.Read();
+        Console.ReadLine();
 
         Console.WriteLine("Main Thread Started");
         //Main Thread creating three child threads
@@ -105,7 +106,7 @@ internal class Program
             Console.WriteLine("Thread 3 Execution Not Completed in 3 second");
         }
         Console.WriteLine("\nClick to See Program use of Join Method");
-        Console.Read();
+        Console.ReadLine();
 
         Console.WriteLine("Main Thread Started");
         Thread thread4 = new Thread(Method4);
@@ -129,7 +130,36 @@ internal class Program
             Console.WriteLine("Thread4 Method1 Completed its work");
         }
         Console.WriteLine("Main Thread Ended");
+        Console.WriteLine("Click Enter  to see Program for Thread Synchronization using Lock method");
+        Console.ReadLine();
+
+        Thread t11 = new Thread(IncrementCount);
+        Thread t12 = new Thread(IncrementCount);
+        Thread t13 = new Thread(IncrementCount);
+        t11.Start();
+        t12.Start();
+        t13.Start();
+        //Wait for all three threads to complete their execution
+        t11.Join();
+        t12.Join();
+        t13.Join();
+        Console.WriteLine(Count);
         Console.Read();
+
+    }
+
+    static int Count = 0;
+    private static readonly object LockCount = new object();
+    static void IncrementCount()
+    {
+        for (int i = 1; i <= 1000000; i++)
+        {
+            //Only protecting the shared Count variable
+            lock (LockCount)
+            {
+                Count++;
+            }
+        }
     }
     static void Method4()
     {
