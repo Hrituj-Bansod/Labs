@@ -162,6 +162,11 @@ internal class Program
             t.Start();
         }
         Console.ReadLine();
+
+        Console.WriteLine("Click Enter  to see Program for Thread Synchronization using Wait and Pulse Method");
+        Console.ReadLine();
+
+        PrintSequence.StartExecution();
     }
 
     private static readonly object lockPrintNumbers = new object();
