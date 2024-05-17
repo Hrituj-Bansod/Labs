@@ -167,6 +167,9 @@ internal class Program
         Console.ReadLine();
 
         PrintSequence.StartExecution();
+
+        Console.WriteLine("Click Enter  to see Program for Thread Synchronization using Mutex for out-Process ");
+        Console.ReadLine();
     }
 
     private static readonly object lockPrintNumbers = new object();
