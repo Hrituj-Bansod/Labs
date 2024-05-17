@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using Synchronization;
+
+internal class Program
 {
     private static Mutex mutex = new Mutex();
     static void Main(string[] args)
@@ -12,7 +14,11 @@
             };
             threadObject.Start();
         }
+        Console.WriteLine("This program ends");
+        Console.WriteLine("Click to Start Execution for Semaphore Program");
         Console.ReadKey();
+
+        SemaphoreDemo.StartExecution();
     }
     //Method to implement syncronization using Mutex  
     static void MutexDemo()
