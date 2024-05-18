@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Contacts>
+  <Contact>
+    <Name>John Doe</Name>
+    <Email>john@example.com</Email>
+    <Phone>1234567890</Phone>
+  </Contact>
+  <Contact>
+    <Name>Jane Smith</Name>
+    <Email>jane@example.com</Email>
+    <Phone>0987654321</Phone>
+  </Contact>
+</Contacts>
