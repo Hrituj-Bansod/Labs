@@ -1,4 +1,5 @@
 ﻿using LINQ;
+using System.Xml.Linq;
 
 internal class Program
 {
@@ -17,6 +18,7 @@ internal class Program
         {
             Console.Write(i + " ");
         }
+        Console.WriteLine();
 
         Console.WriteLine("\nPress any key to see LINQ querying of your data source -  InMemory Data \n");
         Console.ReadLine();
@@ -29,7 +31,7 @@ internal class Program
             Console.WriteLine(item);
         }
 
-        Console.WriteLine("\n Press any key to see LINQ querying of your data source - InMemory Data \n");
+        Console.WriteLine("\nPress any key to see LINQ querying of your data source - InMemory Data \n");
         Console.ReadLine();
         Console.WriteLine("\n--------------------------------------------- LINQ(Language Integrated Query) -  Custom LINQ Query Providers -------------------------------------------\n");
 
@@ -43,7 +45,45 @@ internal class Program
             Console.WriteLine(item);
         }
 
+        Console.WriteLine("\nPress any key to see LINQ querying of your data source -  Remote Data \n");
+        Console.ReadLine();
+        Console.WriteLine("\n--------------------------------------------- LINQ(Language Integrated Query) - Less Complex IQueryable Providers -------------------------------------------\n");
 
+            // Create some dummy data for the XML file
+            XElement contacts =
+                new XElement("Contacts",
+                    new XElement("Contact",
+                        new XElement("Name", "John Doe"),
+                        new XElement("Email", "john@example.com"),
+                        new XElement("Phone", "1234567890")
+                    ),
+                    new XElement("Contact",
+                        new XElement("Name", "Jane Smith"),
+                        new XElement("Email", "jane@example.com"),
+                        new XElement("Phone", "0987654321")
+                    )
+                );
+
+            // Save the dummy data to an XML file
+            contacts.Save(@"C:\Users\proir\Desktop\Training\Day01\LINQ\RemoteData.xml");
+
+            // Load the XML file and query it using LINQ
+            XElement loadedContacts = XElement.Load(@"C:\Users\proir\Desktop\Training\Day01\LINQ\RemoteData.xml");
+
+            // Query the contacts for those with a specific name
+            var query2 =
+                from contact in loadedContacts.Elements("Contact")
+                where (string)contact.Element("Name") == "John Doe"
+                select contact;
+
+            // Display the results
+            foreach (var result in query2)
+            {
+                Console.WriteLine("Name: " + result.Element("Name").Value);
+                Console.WriteLine("Email: " + result.Element("Email").Value);
+                Console.WriteLine("Phone: " + result.Element("Phone").Value);
+                Console.WriteLine();
+            }
 
     }
 }
