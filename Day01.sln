@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiThreading", "MultiThreading\MultiThreading.csproj", "{90416471-D8D1-47AC-BE60-42FE6BB97BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronization", "Synchronization\Synchronization.csproj", "{B56756EC-D0B7-4A98-A982-DE682B7C8FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synchronization", "Synchronization\Synchronization.csproj", "{B56756EC-D0B7-4A98-A982-DE682B7C8FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{82EFE70A-B02F-4593-A2D7-6FAC5E856677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{B56756EC-D0B7-4A98-A982-DE682B7C8FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56756EC-D0B7-4A98-A982-DE682B7C8FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56756EC-D0B7-4A98-A982-DE682B7C8FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EFE70A-B02F-4593-A2D7-6FAC5E856677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EFE70A-B02F-4593-A2D7-6FAC5E856677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EFE70A-B02F-4593-A2D7-6FAC5E856677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EFE70A-B02F-4593-A2D7-6FAC5E856677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
